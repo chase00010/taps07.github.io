@@ -1,0 +1,358 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Porsche</title>
+    <style>
+        header {
+            background: url(img/logo.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 850px;
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator {
+            background-color: gray;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background-color: black;
+        }
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 500px;
+            }
+        }
+        
+.parallax-container {
+    height: 100vh; 
+    overflow: hidden;
+    position: relative;
+}
+
+
+.parallax2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/museum.jpg');
+    background-attachment: fixed; 
+    background-position: center;
+    background-size: cover;
+    z-index: -1; 
+}
+
+
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+.brand-logo img {
+            height: 40px;  
+            margin-right: 10px; 
+        }
+        h2.neon-text {
+    color: #000; 
+   
+}
+.glow-text {
+        color: #fff; /* White text color */
+        text-shadow: 0 0 5px #888, 0 0 10px #888, 0 0 15px #888, 0 0 20px #888, 0 0 25px #888;
+       
+        animation: glowing 2s infinite alternate;
+    }
+
+   
+    @keyframes glowing {
+        0% { text-shadow: 0 0 5px #888, 0 0 10px #888, 0 0 15px #888, 0 0 20px #888, 0 0 25px #888; }
+        50% { text-shadow: 0 0 10px #888, 0 0 20px #888, 0 0 30px #888, 0 0 40px #888, 0 0 50px #888; }
+        100% { text-shadow: 0 0 5px #888, 0 0 10px #888, 0 0 15px #888, 0 0 20px #888, 0 0 25px #888; }
+    }
+
+        
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <nav class="nav-wrapper black">
+            <div class="container">
+                
+                <a href="#" class="brand-logo">
+                    <img src="img/lag.png" alt="#">Porsche</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#photos">Models</a></li>
+                    <li><a href="#services">History</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    <li><a href="#" class="tooltipped btn-floating btn-small grey darken-3" data-tooltip="This is Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/porsche" class="tooltipped btn-floating btn-small grey darken-3" data-tooltip="This is Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li><a href="https://www.youtube.com/user/Porsche" class="tooltipped btn-floating btn-small grey darken-3" data-tooltip="This is YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Photo's</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        
+
+    <!-- photo / grid -->
+    <section class="container section scrollspy" id="photos">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/911.jpg" alt="Zoomable Image" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="glow-text">Porsche 911 GT3</h2>
+                <p>The Porsche 911 GT3 RS is a high-performance sports car with increased race track performance.</p>
+                <a href="911.html" class="grey-text">Read More..</a>
+            </div>
+        </div>
+   
+    
+    
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/taycan.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="glow-text">Porsche Taycan</h2>
+                <p>The Porsche Taycan is an all-electric sports sedan with a range of models, including the Taycan, Taycan 4S, Taycan Turbo, and Taycan Turbo S.</p>
+                <a href="taycan.html" class="grey-text">Read More..</a>
+            </div>
+        </div>
+    
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/356.jpg" alt="Zoomable Image" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="glow-text">Porsche 356</h2>
+                <p>The Porsche 356 is a legendary sports car that holds a significant place in automotive history.</p>
+                <a href="356.html" class="grey-text">Read More..</a>
+            </div>
+        </div>
+   
+
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/spyder.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="glow-text">Porsche Spyder</h2>
+                <p>The Porsche 918 Spyder is a groundbreaking hypercar that represents the pinnacle of Porsche's engineering and technology.</p>
+                <a href="spyder.html" class="grey-text">Read More..</a>
+            </div>
+        </div>
+        
+     </section>
+
+    
+       
+
+    <!-- services / tabs -->
+     <section class="container section scrollspy" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="grey-text text-darken-4">What is Porsche?</h2>
+                <p>Porsche is a renowned German luxury sports car manufacturer founded by Ferdinand Porsche, a legendary automotive engineer. The company is celebrated for its iconic models like the 911, a timeless sports car known for its distinctive rear-engine design and enduring popularity.</p>
+                <p>Porsche's commitment to engineering excellence and performance is evident in its entire lineup, which also includes the 718, Panamera, Cayenne, Macan, and Taycan, a groundbreaking all-electric sports car.</p>
+            </div>
+           
+
+            <div class="col s12 l6 offset-l2">
+                <!-- Tabs Navigation -->
+                <ul class="tabs">
+                    <li class="tab col s6"><a href="#photography" class="grey-text text-darken-4">Modern</a></li>
+                    <li class="tab col s6"><a href="#editing" class="grey-text text-darken-4">Vintage</a></li>
+                </ul>
+            
+                <!-- Tabs Content -->
+                <div id="photography" class="col s12">
+                    <p class="flow-text grey-text text-darken-4">MODERN</p>
+                    <p class="grey-text text-darken-4">Modern Porsches exemplify cutting-edge automotive technology, delivering unparalleled performance and comfort. Hybrid powertrains, advanced aerodynamics, and lightweight materials combine to produce breathtaking acceleration, improved fuel efficiency, and reduced emissions.</p>
+                </div>
+            
+                <div id="editing" class="col s12">
+                    <p class="flow-text grey-text text-darken-4">VINTAGE</p>
+                    <p class="grey-text text-darken-4">Vintage Porsches, on the other hand, offer a unique blend of classic styling and raw driving emotion. These iconic cars, like the 356 and early 911s, boast timeless designs that evoke a sense of history and nostalgia. With less electronic intervention and more direct mechanical linkages, vintage Porsches provide a more visceral and engaging driving experience.</p>
+                </div>
+            </div>
+
+<!-- Initialize Materialize Tabs -->
+<script>
+    $(document).ready(function(){
+        $('.tabs').tabs(); 
+    });
+</script>
+
+</div>
+        </div>
+     </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax2">
+            <img src="" alt="" class="responsive-img">
+        </div>
+    </div>
+    
+
+    <!-- contact form -->
+    <section class="container section scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="grey-text text-darken-4">Visit Us!</h2>
+                <p>Visiting Porsche offers a unique opportunity to immerse oneself in the world of high-performance automobiles. The Porsche Museum, situated in Stuttgart-Zuffenhausen, Germany, stands as a testament to the brand's illustrious history. Here, visitors can explore an extensive collection of iconic Porsche vehicles, from early prototypes to modern hypercars, tracing the evolution of automotive engineering and design.</p>
+                <p>Interactive exhibits and multimedia displays further enrich the experience, providing deeper insights into Porsche's racing heritage, technological innovations, and cultural impact. Beyond the museum, factory tours offer a fascinating glimpse into the meticulous craftsmanship that goes into each Porsche. Witnessing the production process firsthand provides a deeper appreciation for the dedication and precision that define the brand.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt numquam qui autem, quis accusantium, ullam atque vel libero debitis similique necessitatibus deleniti architecto.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt numquam qui autem, quis accusantium, ullam atque vel libero debitis similique necessitatibus deleniti architecto.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your Email</label> 
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">date_range</i>
+                    <input type="text" id="date" class="datepicker">
+                    <label for="date">Choose a date you will visit us</label>
+                </div>
+
+                <div class="input-field">
+                    <p>I have agree to the terms and agreement.</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Yes</span>
+                        </label>
+                    </p>
+
+                    
+                <div class="input-field center">
+                    <button class="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>Disclaimer</h5>
+                    <p>Porsche vehicles are designed for high-performance driving, but always drive responsibly and within the limits of the law and road conditions. While Porsche vehicles incorporate advanced safety features, accidents can still occur. Always exercise caution and prioritize safety while driving. This information is for general guidance only and does not constitute professional advice.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="#" class="grey-text text-">Facebook</a></li>
+                        <li><a href="#" class="grey-text text-">Twitter</a></li>
+                        <li><a href="#" class="grey-text text-">Linked In</a></li>
+                        <li><a href="#" class="grey-text text-">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2024 Porsche</div>
+        </div>
+    </footer>
+   
+       
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableweekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+        window.addEventListener('scroll', function() {
+    const parallaxElements = document.querySelectorAll('.parallax');
+    parallaxElements.forEach(function(parallax) {
+        let scrollPosition = window.pageYOffset;
+        // This translates the background based on the scroll position
+        parallax.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+    });
+});
+
+
+        
+    </script>
+
+    <!-- Include Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        // Initialize tooltips after the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.tooltipped');
+            M.Tooltip.init(elems);
+        });
+    </script>
+<!-- Materialize CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+<!-- Materialize JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- Initialize Materialize components -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+</script>
+
+</body>
+</html>
